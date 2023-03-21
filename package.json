@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "mcastilhos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusCastilhos/MCastilhos.git"
+  },
+  "author": "Marcus Castilhos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcusCastilhos/MCastilhos/issues"
+  },
+  "homepage": "https://github.com/MarcusCastilhos/MCastilhos#readme",
+  "description": ""
+}
