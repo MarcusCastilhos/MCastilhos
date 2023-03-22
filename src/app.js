@@ -7,10 +7,7 @@ app.use(express.json())
 app.listen(port,() => console.log(`Application running in port: ${port}`))
 
 (async () => {
-  const database = require('./db.js');
   const Cliente = require('./models/cliente')
-
-  await database.sync()
 
   try {
     const clienteCreate = await Cliente.create({

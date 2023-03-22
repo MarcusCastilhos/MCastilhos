@@ -7,7 +7,7 @@ const sequelize = new Sequelize('postgres', 'postgres', 'postgres', {
     port: 5432
 })
 
-db.authenticate()
+sequelize.authenticate()
 .then(() => {
   console.log('Connection has been established successfully.');
 }).catch((err) => {
