@@ -3,7 +3,8 @@ const Sequelize = require('sequelize')
 const sequelize = new Sequelize('postgres', 'postgres', 'postgres', {
     dialect: 'postgres',
     host: 'localhost',
-    logging: true,
+    logging: (message) => (
+      console.log(`Sequelize log: ${message}`)),
     port: 5432
 })
 

@@ -5,19 +5,3 @@ const port = 3001
 app.use(express.json())
 
 app.listen(port,() => console.log(`Application running in port: ${port}`))
-
-(async () => {
-  const Cliente = require('./models/cliente')
-
-  try {
-    const clienteCreate = await Cliente.create({
-      nome: 'Marcus',
-      cpf: '01234567890',
-      email: 'marcus@teste.com',
-      telefone: '53911112222'
-    })
-    console.log(clienteCreate)
-  } catch (error) {
-    console.log(error)
-  }
-})()
